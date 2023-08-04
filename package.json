@@ -2,7 +2,7 @@
   "name": "rest-countries-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://BelgardeJeanRonel.github.io/rest-countries-app",
+  "homepage": "https://BelgardeJeanRonel.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

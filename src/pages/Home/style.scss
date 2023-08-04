@@ -1,0 +1,12 @@
+.Home {
+  padding: 1.7rem 1rem;
+  max-width: 1500px;
+  margin: auto;
+
+  .container-inputs {
+    @media screen and (min-width: 600px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

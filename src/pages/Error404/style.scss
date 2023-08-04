@@ -1,0 +1,18 @@
+@import "../../utils/styles/_variables";
+
+.error {
+  text-align: center;
+  margin-top: 3rem;
+
+  &.dark-mode {
+    color: $white;
+  }
+
+  .e404 {
+    font-size: 8rem;
+  }
+
+  .text {
+    margin-bottom: 4rem;
+  }
+}

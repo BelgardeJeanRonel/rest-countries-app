@@ -1,0 +1,49 @@
+@import "../../utils/styles/_variables";
+
+.card {
+  background-color: $white;
+  border-radius: $borderRadius;
+  box-shadow: $boxShadow;
+  color: $lightModeText;
+  text-decoration: none;
+
+  &.dark-mode {
+    background-color: $darkModeElements;
+    color: $white;
+  }
+
+  &:hover {
+    scale: 1.05;
+    transition: 0.5s;
+  }
+
+  &-flag {
+    height: 220px;
+
+    img {
+      width: 100%;
+      border-top-left-radius: $borderRadius;
+      border-top-right-radius: $borderRadius;
+      height: 100%;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.247);
+    }
+  }
+
+  &-infos {
+    padding: 0 1.5rem 1.5rem;
+  }
+
+  &-stat {
+    margin-bottom: 0.3rem;
+
+    & span:first-child {
+      font-weight: bold;
+      display: inline-block;
+      margin-right: 0.3rem;
+    }
+
+    & span:last-child {
+      font-weight: lighter;
+    }
+  }
+}

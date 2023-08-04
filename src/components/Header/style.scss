@@ -1,0 +1,38 @@
+@import "../../utils/styles/_variables";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: $lightModeText;
+  background-color: $white;
+  padding: 0rem 1rem 0.5rem;
+  box-shadow: $boxShadow;
+
+  &.dark-mode {
+    background-color: $darkModeElements;
+    color: $white;
+
+    &-title {
+      color: $white;
+    }
+  }
+
+  &-title {
+    color: $lightModeText;
+    text-decoration: none;
+
+    @media screen and (min-width: 600px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .mode {
+    align-self: center;
+    cursor: pointer;
+    padding: 0.3rem 0;
+  }
+}
+
+.dark-mode .header-title {
+  color: $white;
+}

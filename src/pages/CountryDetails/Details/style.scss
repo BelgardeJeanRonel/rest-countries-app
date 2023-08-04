@@ -1,0 +1,70 @@
+@import "../../../utils/styles/variables";
+
+.details {
+  &.dark-mode {
+    color: $white;
+  }
+
+  @media screen and (min-width: 900px) {
+    display: flex;
+    gap: 4rem;
+  }
+  .card-title {
+    margin: 0 0 0.4rem 0;
+  }
+
+  .card-flag {
+    height: auto;
+
+    @media screen and (min-width: 900px) {
+      width: 40%;
+      height: 350px;
+    }
+
+    img {
+      border: none;
+    }
+  }
+
+  .container-infos {
+    @media screen and (min-width: 900px) {
+      width: 60%;
+    }
+  }
+
+  .card-infos {
+    padding: 1.5rem 0;
+    @media screen and (min-width: 900px) {
+      display: flex;
+      gap: 6rem;
+    }
+  }
+
+  .level {
+    align-self: center;
+  }
+  .top-level {
+    margin-top: 2rem;
+  }
+
+  .container-borders {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .title-border {
+    margin: 0.5rem 0;
+  }
+
+  .btn-border {
+    padding: 0.4rem 1rem;
+    box-shadow: $boxShadow;
+    background-color: $white;
+
+    &.dark-mode {
+      background-color: $darkModeElements;
+      color: $white;
+    }
+  }
+}

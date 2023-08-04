@@ -19,22 +19,26 @@ export function Details(props) {
         <div className="card-infos">
           <div>
             <h2 className="card-title">{props.name.common}</h2>
-            <div className="card-stat">
-              <span>Native Name:</span>
-              <span>
-                {props.altSpellings.length > 1
-                  ? props.altSpellings[1]
-                  : props.altSpellings[0]}
-              </span>
-            </div>
+            {isObjectKeyExist(props, "altSpellings") && (
+              <div className="card-stat">
+                <span>Native Name:</span>
+                <span>
+                  {props.altSpellings.length > 1
+                    ? props.altSpellings[1]
+                    : props.altSpellings[0]}
+                </span>
+              </div>
+            )}
             <div className="card-stat">
               <span>Population:</span>
               <span>{props.population}</span>
             </div>
-            <div className="card-stat">
-              <span>Region:</span>
-              <span>{props.region}</span>
-            </div>
+            {isObjectKeyExist(props, "region") && (
+              <div className="card-stat">
+                <span>Region:</span>
+                <span>{props.region}</span>
+              </div>
+            )}
             {isObjectKeyExist(props, "subregion") && (
               <div className="card-stat">
                 <span>Sub Region:</span>
@@ -49,10 +53,12 @@ export function Details(props) {
             )}
           </div>
           <div className="level">
-            <div className="card-stat top-level">
-              <span>Top Level Domaine:</span>
-              <span>{props.tld}</span>
-            </div>
+            {isObjectKeyExist(props, "tld") && (
+              <div className="card-stat top-level">
+                <span>Top Level Domaine:</span>
+                <span>{props.tld}</span>
+              </div>
+            )}
             {isObjectKeyExist(props, "currencies") && (
               <div className="card-stat">
                 <span>Currencies:</span>

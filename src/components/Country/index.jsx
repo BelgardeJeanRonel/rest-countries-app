@@ -7,7 +7,9 @@ export function Country(props) {
   const theme = useSelector((state) => state.theme);
 
   return (
-    <Link className={theme === "dark" ? "card dark-mode" : "card"} to={`country/${props.name.common}`}>
+    <Link className={theme === "dark" ? "card dark-mode" : "card"} to={`country/${props.name.common}`} 
+    
+    >
       <div className="card-flag">
         <img src={props.flags.png} alt={props.name.common} />
       </div>

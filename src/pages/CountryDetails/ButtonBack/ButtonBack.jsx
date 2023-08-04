@@ -9,7 +9,9 @@ export function ButtonBack() {
 
   return (
     <Link to="/">
-      <button className={theme === "dark" ? "back dark-mode" : "back"}>
+      <button
+        className={theme === "dark" ? "back dark-mode" : "back"}
+      >
         <img src={theme === "dark" ? arrowlight : arrowdark} /> Back
       </button>
     </Link>

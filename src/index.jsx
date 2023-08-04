@@ -1,13 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import "./index.scss";
-import { Home } from "./pages/Home";
+
 import reportWebVitals from "./reportWebVitals";
-import { Header } from "./components/Header";
+
 import { Provider } from "react-redux";
 import { store } from "./store";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { CountryDetails } from "./pages/CountryDetails/CountryDetails";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import { App } from "./components/App";
 import { GlobalStyle } from "./utils/styles/GloabalStyle";
 

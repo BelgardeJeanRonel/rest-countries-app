@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/rest-countries-app/static/css/main.526d27b1.css",
-    "main.js": "/rest-countries-app/static/js/main.c86f7f2d.js",
+    "main.css": "/rest-countries-app/static/css/main.a8f1cdf1.css",
+    "main.js": "/rest-countries-app/static/js/main.72de8ca0.js",
     "static/js/787.598ce70e.chunk.js": "/rest-countries-app/static/js/787.598ce70e.chunk.js",
     "static/media/search.png": "/rest-countries-app/static/media/search.213f8146323d9e26c7c9.png",
     "index.html": "/rest-countries-app/index.html",
     "static/media/arrow-left-ligth.svg": "/rest-countries-app/static/media/arrow-left-ligth.a888471b224f27f999c63801da09c87d.svg",
     "static/media/arrow-left-dark.svg": "/rest-countries-app/static/media/arrow-left-dark.46a5ee76c81d6e4f14eb4c37ed2c0ecb.svg",
-    "main.526d27b1.css.map": "/rest-countries-app/static/css/main.526d27b1.css.map",
-    "main.c86f7f2d.js.map": "/rest-countries-app/static/js/main.c86f7f2d.js.map",
+    "main.a8f1cdf1.css.map": "/rest-countries-app/static/css/main.a8f1cdf1.css.map",
+    "main.72de8ca0.js.map": "/rest-countries-app/static/js/main.72de8ca0.js.map",
     "787.598ce70e.chunk.js.map": "/rest-countries-app/static/js/787.598ce70e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.526d27b1.css",
-    "static/js/main.c86f7f2d.js"
+    "static/css/main.a8f1cdf1.css",
+    "static/js/main.72de8ca0.js"
   ]
 }

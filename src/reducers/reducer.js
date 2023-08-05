@@ -1,8 +1,9 @@
 import { produce } from "immer";
 import {
   FETCHING,
-  INPUT_COUNTRIE,
+  INPUT_COUNTRY,
   REJECTED,
+  RESET_FIELD,
   RESOLVED,
   SELECT_REGION,
   THEME_LOCAL_STORAGE,
@@ -16,7 +17,7 @@ const initialState = {
     data: null,
     error: null,
   },
-  inputCountrie: "",
+  inputCountry: "",
   regionValue: "",
   theme: "light",
 };
@@ -69,8 +70,8 @@ export function reducer(state = initialState, action) {
         return;
       }
 
-      case INPUT_COUNTRIE: {
-        draft.inputCountrie = action.value;
+      case INPUT_COUNTRY: {
+        draft.inputCountry = action.value;
 
         return;
       }
@@ -91,6 +92,12 @@ export function reducer(state = initialState, action) {
 
         return;
       }
+
+      // case RESET_FIELD: {
+        
+
+      //   return;
+      // }
       default:
         return;
     }

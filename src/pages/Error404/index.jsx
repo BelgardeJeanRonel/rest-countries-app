@@ -9,7 +9,7 @@ export function Error() {
     <div className={theme === "dark" ? "error dark-mode" : "error"}>
       <div className="e404">404</div>
       <p className="text">
-        Il semblerait que la page que vous cherchez n’existe pas
+        It looks like the page you are looking for does not exist.
       </p>
       <ButtonBack />
     </div>

@@ -28,7 +28,7 @@ export function App() {
         <Loader />
       ) : countries.status === "rejected" || countries.data?.message ? (
         <div className={theme === "dark" ? "notFound dark-mode" : "notFound"}>
-          Nous sommes désolé, Une erreur s'est produite.
+          We're sorry, An error has occurred.
         </div>
       ) : (
         <Routes>

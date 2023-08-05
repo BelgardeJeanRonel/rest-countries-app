@@ -6,6 +6,7 @@ import {
 } from "../../../utils/functions/functions";
 
 import "./style.scss";
+import { Description } from "../../../components/Description";
 
 export function Details(props) {
   const theme = useSelector((state) => state.theme);
@@ -20,52 +21,35 @@ export function Details(props) {
           <div>
             <h2 className="card-title">{props.name.common}</h2>
             {isObjectKeyExist(props, "altSpellings") && (
-              <div className="card-stat">
-                <span>Native Name:</span>
-                <span>
-                  {props.altSpellings.length > 1
+              <Description
+                label="Native Name:"
+                answer={
+                  props.altSpellings.length > 1
                     ? props.altSpellings[1]
-                    : props.altSpellings[0]}
-                </span>
-              </div>
+                    : props.altSpellings[0]
+                }
+              />
             )}
-            <div className="card-stat">
-              <span>Population:</span>
-              <span>{props.population}</span>
-            </div>
+            <Description label="Population:" answer={props.population} />
             {isObjectKeyExist(props, "region") && (
-              <div className="card-stat">
-                <span>Region:</span>
-                <span>{props.region}</span>
-              </div>
+              <Description label="Region:" answer={props.region} />
             )}
             {isObjectKeyExist(props, "subregion") && (
-              <div className="card-stat">
-                <span>Sub Region:</span>
-                <span>{props.subregion}</span>
-              </div>
+              <Description label="Sub Region:" answer={props.subregion} />
             )}
             {isObjectKeyExist(props, "capital") && (
-              <div className="card-stat">
-                <span>Capital:</span>
-                <span>{props.capital}</span>
-              </div>
+              <Description label="Capital:" answer={props.capital} />
             )}
           </div>
           <div className="level">
             {isObjectKeyExist(props, "tld") && (
-              <div className="card-stat top-level">
-                <span>Top Level Domaine:</span>
-                <span>{props.tld}</span>
-              </div>
+              <Description label="Top Level Domaine:" answer={props.tld} />
             )}
             {isObjectKeyExist(props, "currencies") && (
-              <div className="card-stat">
-                <span>Currencies:</span>
-                <span>
-                  {props.currencies[getKey(props.currencies)[0]].name}
-                </span>
-              </div>
+              <Description
+                label="Currencies:"
+                answer={props.currencies[getKey(props.currencies)[0]].name}
+              />
             )}
             {isObjectKeyExist(props, "languages") && (
               <div className="card-stat">

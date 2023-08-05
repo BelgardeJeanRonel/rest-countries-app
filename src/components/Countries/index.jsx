@@ -14,7 +14,7 @@ function getCountries(countries, region) {
 
 export function Countries() {
   const countries = useSelector((state) => state.countries);
-  const inputValue = useSelector((state) => state.inputCountrie);
+  const inputValue = useSelector((state) => state.inputCountry);
   const currentRegion = useSelector((state) => state.regionValue);
   const theme = useSelector((state) => state.theme);
 

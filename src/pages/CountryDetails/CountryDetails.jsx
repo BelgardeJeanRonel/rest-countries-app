@@ -5,6 +5,7 @@ import "./style.scss";
 import { useSelector } from "react-redux";
 import { findCountry } from "../../selectors/country";
 import { Error } from "../Error404";
+import { useEffect } from "react";
 
 export function CountryDetails() {
   const { name } = useParams();
@@ -12,6 +13,9 @@ export function CountryDetails() {
     findCountry(state.countries.data, name)
   );
 
+  useEffect(() => {
+    document.title = `Rest Countries App - ${name}`;
+  },[name]);
   return (
     <div className="countryDetails">
       {country ? (
@@ -19,7 +23,9 @@ export function CountryDetails() {
           <ButtonBack />
           <Details {...country} />
         </>
-      ) : <Error />}
+      ) : (
+        <Error />
+      )}
     </div>
   );
 }

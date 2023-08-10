@@ -1,14 +1,19 @@
 import { Link } from "react-router-dom";
 import "./style.scss";
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
 
 export function Country(props) {
-
   const theme = useSelector((state) => state.theme);
 
+  useEffect(() => {
+    document.title = "Rest Countries App";
+  }, []);
+
   return (
-    <Link className={theme === "dark" ? "card dark-mode" : "card"} to={`country/${props.name.common}`} 
-    
+    <Link
+      className={theme === "dark" ? "card dark-mode" : "card"}
+      to={`country/${props.name.common}`}
     >
       <div className="card-flag">
         <img src={props.flags.png} alt={props.name.common} />

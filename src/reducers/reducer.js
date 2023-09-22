@@ -93,11 +93,12 @@ export function reducer(state = initialState, action) {
         return;
       }
 
-      // case RESET_FIELD: {
-        
+      case RESET_FIELD: {
+        draft.inputCountry = "";
+        draft.regionValue = "";
 
-      //   return;
-      // }
+        return;
+      }
       default:
         return;
     }

@@ -17,3 +17,7 @@ export function getObjectValues(object) {
 export function getKey(object) {
   return Object.keys(object);
 }
+
+export function scrollToTop() {
+  window.scrollTo(0, 0);
+}

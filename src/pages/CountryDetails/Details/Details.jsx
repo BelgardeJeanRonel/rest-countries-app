@@ -3,13 +3,17 @@ import {
   getKey,
   getObjectValues,
   isObjectKeyExist,
+  scrollToTop,
 } from "../../../utils/functions/functions";
 
 import "./style.scss";
 import { Description } from "../../../components/Description";
+import { useFetchingCountries } from "../../../utils/hooks/useFetchingCountries";
 
 export function Details(props) {
   const theme = useSelector((state) => state.theme);
+  scrollToTop();
+  useFetchingCountries();
 
   return (
     <div className={theme === "dark" ? "details dark-mode" : "details"}>

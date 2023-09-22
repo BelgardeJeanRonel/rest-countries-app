@@ -7,7 +7,7 @@ export const INPUT_COUNTRY = "INPUT_COUNTRY";
 export const SELECT_REGION = "selectRegion";
 export const TOGGLE_THEME = "theme/toggle";
 export const THEME_LOCAL_STORAGE = "THEME_LOCAL_STORAGE";
-// export const RESET_FIELD = "RESET_FIELD";
+export const RESET_FIELD = "RESET_FIELD";
 
 
 export const countriesFetching = () => ({ type: FETCHING });
@@ -24,6 +24,6 @@ export const themeLocalStorage = (theme) => ({
   theme,
 });
 
-// export const resetField = () => ({ type: RESET_FIELD });
+export const resetField = () => ({ type: RESET_FIELD });
 
 

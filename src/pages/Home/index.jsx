@@ -4,9 +4,11 @@ import { Field } from "../../components/Field";
 import { Filter } from "../../components/Filter";
 import "./style.scss";
 import { useFetchingCountries } from "../../utils/hooks/useFetchingCountries";
+import { scrollToTop } from "../../utils/functions/functions";
 
 export function Home() {
   useFetchingCountries();
+  scrollToTop();
 
   return (
     <div className="Home">
